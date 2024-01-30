@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&display=swap');
 </style>
@@ -102,6 +106,10 @@
             position: relative;
             z-index: 1; 
         }
+        .custom-p a {
+    color: #0000EE
+;
+}
 
 
 
@@ -177,6 +185,17 @@
         body {
             font-family: Poppins;
             margin-top: 8rem;
+        }
+        .body {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin: 150px;
+            padding: 0;
+            position: relative;
+            bottom: 10px;
+            left: 25px;
         }
 
         h1 {
@@ -300,13 +319,55 @@
 
         .custom-p {
         font-size: 15px;
-        font-weight: lighter;  
-        color: #000000; 
+         color: #000000; 
         margin-left: 0px;
         margin: 0px;
          }
-    
+        
+         
+        .column {
+            width: 23%;
+            margin: 10px;
+        }
 
+        .fa-brands   {
+   font-size: 25px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+   color: #0400ff;
+   position: relative;
+   right: 230px;
+ }
+ .fa-solid   {
+   font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+   color: #000000;
+   position: relative;
+   right: 230px;
+ }
+ .fa-solid.fa-location-dot {
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+    right: 250px;
+}
+.fa-solid.fa-envelope{
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+    right: 230px;
+}
+
+        
     </style>
 </head>
 <body>
@@ -334,10 +395,35 @@
             <input type="submit">
         </div>
     </form>
-    <div class="info">
-        <h3>BASED IN<br><p class="custom-p">Sta Mesa, Manila Philippines</p></h3>
-        <h4>EMAIL<br><a href="mailto:islmsystem@gmail.com" target="_blank" title="Send an email to islmsystem@gmail.com">islmsystem@gmail.com</a></h4>
+
+    <div class="body">
+        <div class="column">
+            <h3>CONTACT US</h3>
+            <p class="custom-p">Phone: (+63)94 2517 5310 <i class="fa-solid fa-phone"></i></p>
+        </div>
+    
+        <div class="column">
+            <h3>EMAIL</h3>
+            <p class="custom-p">
+                <a href="mailto:islmsystem@gmail.com" target="_blank" title="Send an email to islmsystem@gmail.com">Integrated School Library <i class="fa-solid fa-envelope"></i></a>
+            </p>
+        </div>
+    
+        <div class="column">
+            <h3>KEEP IN TOUCH WITH US</h3>
+            <p class="custom-p">
+                <a href="https://www.facebook.com/jesfer.b.saco" target="_blank" title="Visit our Facebook page">Integrated School Library <i class="fa-brands fa-facebook"></i></a>
+            </p>
+        </div>
+    
+        <div class="column">
+            <h3>BASED IN</h3>
+            <p class="custom-p">
+                <a href="https://www.google.com/maps/place/Polytechnic+University+of+the+Philippines/data=!4m7!3m6!1s0x3397c9dd976ededf:0xbaaa357c5585b8c2!8m2!3d14.5979292!4d121.0107556!16zL20vMDU1eTFn!19sChIJ395ul93JlzMRwriFVXw1qro?authuser=0&hl=en&rclk=1" target="_blank" title="Visit our location on Google Maps">Sta Mesa, Manila Philippines <i class="fa-solid fa-location-dot"></i></a>
+            </p>
+        </div>
     </div>
     
+
 </body>
 </html>
